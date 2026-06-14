@@ -16,7 +16,10 @@ body {
     width: 1300px;
     padding: 20px;
     display: flex;
+    text-align: center;
+    justify-content: center;
     flex-wrap:wrap;
+    color: red;
 }
 .card {
     margin: 5px;
