@@ -149,6 +149,10 @@ inp.addEventListener("input",()=>{
   let newUsers = users.filter((user)=>{
     return user.name.startsWith(inp.value);
   });
+  
   document.querySelector(".main").innerHTML = " ";
-  showUsers(newUsers);
+  if(newUsers.length===0){
+    document.querySelector(".main").textContent="*User Not Found";
+  }
+  else showUsers(newUsers);
 });
